@@ -1,0 +1,247 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+header,main{
+    max-width: 1200px;
+  margin: auto;
+}
+nav{
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+  
+    align-items: center;
+ position: fixed;
+ width: 1200px;
+ top: 0;
+
+}
+
+.nav-img-container,.nav-logo{
+    font-size: 36px;
+}
+.nav-img-container{
+    display: flex;
+gap: 13px;
+align-items: center;
+}
+nav ul>li{
+list-style: none;
+display: inline;
+margin-right: 30px;
+}
+li>a{
+    text-decoration: none;
+    color: rgb(66, 66, 71);
+}
+.home{
+    color: rgb(255, 84, 0);
+}
+.Travel{
+    color: rgb(255, 84, 0);
+}
+.nav-img-container{
+    color: rgb(19, 19, 24);
+}
+.menu{
+  display: none;
+}
+
+
+
+
+/* .....  Travel-Section */
+
+
+
+.explore-travel{
+    display: none;
+    margin-top: 100px;
+    height: 500px;
+    background-image: url(Images/Group\ 13\ \(1\)\ \(1\).png);
+    background-size: cover;
+display: flex;
+flex-direction: column;
+text-align: center;
+align-items: center;
+
+
+}
+.travel-title{
+    font-size: 64px;
+ color: rgb(255, 255, 255);
+ margin-top: 106px;
+}
+.travel-discription{
+    color: rgb(255, 255, 255); 
+    margin-top: 20px; 
+    margin-bottom: 50px;
+}
+.input{
+    display: flex;
+    height: 84px;
+    align-items: center;
+    justify-content: center;
+    width: 800px;
+gap: 20px;
+background-color: rgba(255, 255, 255, 0.3);
+}
+
+
+.box{
+    height: 52px;
+    width: 110px;
+    padding: 0 5px 0 5px;
+    background-color: white;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 6px;
+}
+.find{
+    height: 52px;
+    width: 100px;
+    padding: 0 10px ;
+
+    margin-bottom: 10px;
+    display: flex;
+    
+    align-items: center;
+ 
+   color: white;
+   gap: 10px;
+    background-color: orange;
+    border-radius: 6px;
+}
+
+
+.inline-block{
+    display: inline-block;
+    height: 52px;
+    width: 110px;
+    border: none;
+}
+
+
+                 /* Tour-section */
+.tour-title{
+    font-size: 40px;
+    color: rgb(19, 19, 24);
+    margin-bottom: 50px;
+}
+.tour-discription{
+margin-bottom:35px;
+color: rgba(19, 19, 24, 0.7);
+}
+.tour-btn{
+    padding: 10px  20px  10px  20px;
+    background-color:rgb(255, 84, 0);
+    color:white; 
+    border-radius: 6px;
+    border: none;
+}
+.our-popular-tur{
+    margin-top: 100px;
+    display: flex;
+    gap:40px;
+}
+.tour-place ul{
+    padding-right: 150px;
+  color: rgba(19, 19, 24, 0.7);
+}
+
+.tour-place ul >li{
+    margin-bottom: 35px;
+   
+}
+
+
+/* responsive for mobile */
+
+ @media screen and (max-width:576px) {
+    body{
+        padding:20px;
+    }
+    nav{
+        width: 100%;
+        justify-content: space-between;
+    
+    }
+    header{
+      margin: 0;
+      background: gold;
+    }
+    .nav-logo{
+       width:30px;
+       height: 33px;
+ 
+    }
+    .hero-travel{
+        font-size: 21px;
+    }
+    .li-container{
+        display: none;
+    }
+    .menu{
+        display: block;
+        width: 16px;
+        height: 10px;
+    }
+    .travel-title{
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+    .travel-discription{
+   margin-bottom: 90px;
+    }
+    .box{
+        width: 255px;
+        height: 10vh;
+    }
+
+    .our-popular-tur,
+    .input{
+        display: flex;
+        flex-direction: column;
+    
+    }
+   .tour-img{
+    width: 90%;
+   ;
+  
+   }
+    .img{
+        display: flex;
+        justify-content: center;
+    }
+    } 
+/* 
+ @media screen and (max-width:576px) {
+    header{
+   padding: 20px;
+   max-width: 576px;
+    }
+    .li-container{
+        display: none;
+    }
+    .menu{
+        display: block;
+        
+    }
+    nav{
+     
+        display: flex;
+        justify-content: space-between;
+    }
+    .nav-logo{
+        width:30px;
+        height: 33px;
+  
+     }
+     .hero-travel{
+         font-size: 21px;
+     }
+ } */
